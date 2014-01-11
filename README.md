@@ -6,7 +6,7 @@
   
 ## Get It
 ```bash
-$ go get https://github.com/scottkiss/gostas.git
+$ go get github.com/scottkiss/gostas
 ```
 
 ## Useage
