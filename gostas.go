@@ -76,10 +76,10 @@ func ShowDirs() *GoStaticServer {
 
 func UseConfig() *GoStaticServer {
 	f, err := os.OpenFile(CONFIG_FILE, os.O_RDONLY, 0666)
-	defer f.Close()
 	if err != nil {
 		log.Fatal("Read config file ", err.Error())
 	}
+	defer f.Close()
 	reader := bufio.NewReader(f)
 	for {
 		s, eof := reader.ReadString('\n')
